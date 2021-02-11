@@ -247,7 +247,7 @@ public class KubernetesHandler extends AbstractKubernetesHandler<KubernetesConfi
         .withGroup(imageConfig.getGroup() != null ? imageConfig.getGroup() : null)
         .withName(imageConfig.getName() != null ? imageConfig.getName() : appConfig.getName())
         .withVersion(imageConfig.getVersion() != null ? imageConfig.getVersion() : appConfig.getVersion())
-        .withRegistry(imageConfig.getRegistry() != null ? imageConfig.getRegistry() : null)
+        .withRegistry(imageConfig.getRegistry() != null ? imageConfig.getRegistry() : DEFAULT_REGISTRY)
         .withDockerFile(imageConfig.getDockerFile() != null ? imageConfig.getDockerFile() : "Dockerfile")
         .withAutoBuildEnabled(imageConfig.isAutoBuildEnabled() ? imageConfig.isAutoBuildEnabled() : false)
         .withAutoPushEnabled(imageConfig.isAutoPushEnabled() ? imageConfig.isAutoPushEnabled() : false)
