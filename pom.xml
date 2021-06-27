@@ -60,7 +60,7 @@
     <version.jansi>1.18</version.jansi>
     <version.jackson>2.12.3</version.jackson>
     <version.kubernetes-client>5.1.1</version.kubernetes-client>
-    <version.sundrio>0.25.1</version.sundrio>
+    <version.sundrio>0.30.0</version.sundrio>
 
     <!-- Testing Dependencies -->
     <version.junit-jupiter>5.5.0</version.junit-jupiter>
