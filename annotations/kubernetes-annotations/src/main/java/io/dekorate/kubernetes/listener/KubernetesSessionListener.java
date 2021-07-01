@@ -89,7 +89,7 @@ public class KubernetesSessionListener implements SessionListener, WithProject, 
     }
 
     if (kubernetesConfig.isAutoDeployEnabled()) {
-      hooks.add(new ScaleDeploymentHook(getProject(), kubernetesConfig.getName(), 1));
+      hooks.add(new ScaleDeploymentHook(getProject(), kubernetesConfig.getName(), kubernetesConfig.getReplicas()));
     }
     if (!hooks.isEmpty()) {
       OrderedHook hook = OrderedHook.create(hooks.toArray(new ProjectHook[hooks.size()]));
